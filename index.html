@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en" data-accent="gold">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Crown & Blade Barbershop</title>
+<meta name="description" content="Sharp fades, clean beards and a calm chair. Book your cut on WhatsApp.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Oswald:wght@500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="top"><div class="wrap bar"><a class="logo" href="#home">Crown <span>&</span> Blade</a><nav id="nav"><a href="#services">Services</a><a href="#book">Book</a><a href="#hours">Hours</a><a href="#contact">Contact</a></nav><div class="tools"><button id="themeBtn" aria-label="Change theme">🎨</button><button id="menuBtn" aria-label="Menu">☰</button></div></div><div id="themePanel" class="panel" hidden></div></header>
+<main>
+<section class="hero" id="home"><div class="wrap">
+<div><h1>Fresh cut.<br>Clean lines.<br>Zero stress.</h1>
+<p>Skin fades, sharp edge-ups and beard work, done by barbers who take their time. Walk in or book your chair.</p>
+<div class="btns"><a class="btn" href="#book">Book a cut</a><a class="btn ghost" href="#services">See prices</a></div></div>
+<div class="pole" aria-hidden="true"></div></div></section>
+
+<section id="services"><div class="wrap"><h2>Services and prices</h2><p class="lead">Prices are in Naira. Not sure what to pick? Show us a photo and we will match it.</p><div class="grid" id="svcList"></div></div></section>
+
+<section id="book"><div class="wrap"><h2>Book your chair</h2><p class="lead">Fill this in and it opens WhatsApp with your booking ready to send.</p>
+<form id="bookForm"><input id="name" placeholder="Your name" required>
+<select id="service" required></select>
+<input id="date" type="date" required>
+<select id="time" required><option value="">Pick a time</option><option>10:00 AM</option><option>12:00 PM</option><option>2:00 PM</option><option>4:00 PM</option><option>6:00 PM</option></select>
+<button class="btn" type="submit">Send booking on WhatsApp</button></form></div></section>
+
+<section id="hours"><div class="wrap"><h2>Opening hours</h2><div class="hours" style="margin-top:18px">
+<div><span>Monday to Friday</span><b>9:00 AM - 8:00 PM</b></div><div><span>Saturday</span><b>8:00 AM - 9:00 PM</b></div><div><span>Sunday</span><b>12:00 PM - 6:00 PM</b></div></div></div></section>
+
+<section id="contact"><div class="wrap"><h2>Find us</h2><p class="lead">Your shop address goes here. Edit it in index.html.</p>
+<div class="btns" style="margin-top:0"><a class="btn" id="callBtn" href="#">Call us</a><a class="btn ghost" id="waBtn" href="#">Chat on WhatsApp</a></div></div></section>
+</main>
+<footer><div class="wrap">&copy; <span id="year"></span> Crown &amp; Blade Barbershop</div></footer>
+<a class="wa" id="waFloat" href="#">WhatsApp</a>
+<script src="script.js"></script>
+</body></html>
