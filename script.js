@@ -24,7 +24,7 @@ applyTheme(store.get('mode')||defaultMode,store.get('accent')||root.dataset.acce
 document.getElementById('year').textContent=new Date().getFullYear();
 
 /* ===== EDIT THESE ===== */
-const PHONE='2349069739190'; // international format, no + or spaces
+const PHONE='2348066453930'; // international format, no + or spaces
 const SERVICES=[
  ['Classic haircut','Scissor and clipper cut with a clean neckline.',3000],
  ['Skin fade','Zero-to-low blend with a sharp edge-up.',4000],
